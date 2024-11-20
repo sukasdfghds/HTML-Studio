@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #d3d3d3, #b0b0b0);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            background-color: #4a4a4a;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        header a:hover {
+            background-color: #333;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            background-color: #e6e6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Сетка для картинок */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 картинок в ряду */
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        /* Стили для картинок */
+        .gallery .image-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /* Масштабируем изображение, сохраняя пропорции */
+        }
+
+        /* Линия между картинкой и текстом */
+        .gallery .image-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        /* Стили для большой картинки (11-й рисунок) */
+        .large-image img {
+            width: 90%; /* Увеличиваем ширину */
+            max-width: 800px;
+            height: auto;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #d3d3d3;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Studio</h1>
+        <p>"Это простой, удобный и лёгкий редактор для создания сайтов"</p>
+        <a href="https://drive.google.com/uc?export=download&id=1NL9SyrrxVSrtBtgk0chp9iFW5eOx11q2" target="_blank">Скачать для Windows</a>
+    </header>
+
+    <section>
+        <h2>О приложении</h2>
+        <div class="features">
+            <p><strong>HTML Studio</strong> — это простой редактор для создания сайтов с помощью языка HTML. Он идеально подходит для начинающих и опытных пользователей.</p>
+            <ul style="text-align: left; max-width: 600px; margin: auto;">
+                <li>Малый размер и высокая скорость работы.</li>
+                <li>Работает даже на самых слабых компьютерах.</li>
+                <li>Удобный интерфейс с вкладками, как в браузере.</li>
+                <li>Функции: создание, открытие, редактирование и сохранение HTML-файлов.</li>
+                <li>Полная совместимость с Windows.</li>
+                <li>Отсутствие сложных настроек: подходит для любых пользователей.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Как скачать и пользоваться</h2>
+        <div class="features">
+            <p>Для скачивания и использования выполните следующие шаги:</p>
+            <ol style="text-align: left; max-width: 600px; margin: auto;">
+                <li>Нажмите на кнопку "Скачать" выше.</li>
+                <li>Извлеките архив с файлом программы.</li>
+                <li>Откройте приложение, перетащив HTML-файл на главное окно, или начните работу с чистого документа.</li>
+                <li>Используйте кнопки меню для сохранения, открытия или редактирования файлов.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <h2>Главное окно редактора</h2>
+        <div class="features large-image">
+            <img src="123.png" alt="Главное окно редактора">
+        </div>
+    </section>
+
+    <section>
+        <h2>Иллюстрации и интерфейс</h2>
+        <div class="gallery">
+            <div class="image-item">
+                <img src="open.png" alt="Открытие файла">
+                <p><strong>Открыть файл:</strong> Позволяет открыть уже существующий файл на вашем компьютере.</p>
+            </div>
+            <div class="image-item">
+                <img src="save.png" alt="Сохранение файла">
+                <p><strong>Сохранить файл:</strong> Сохраняет текущий документ в выбранном месте.</p>
+            </div>
+            <div class="image-item">
+                <img src="cancel.png" alt="Закрытие вкладки">
+                <p><strong>Закрыть вкладку:</strong> Закрывает текущую вкладку редактора.</p>
+            </div>
+            <div class="image-item">
+                <img src="new.png" alt="Открытие вкладки">
+                <p><strong>Открыть вкладку:</strong> Открывает новую вкладку для работы с другим документом.</p>
+            </div>
+            <div class="image-item">
+                <img src="fontColor.png" alt="Настройки цвета текста">
+                <p><strong>Настройки цвета текста:</strong> Изменяет цвет текста в редакторе.</p>
+            </div>
+            <div class="image-item">
+                <img src="backColor.png" alt="Настройки цвета выделения">
+                <p><strong>Настройки цвета выделения:</strong> Изменяет цвет фона или выделения текста.</p>
+            </div>
+            <div class="image-item">
+                <img src="font.png" alt="Настройки шрифта">
+                <p><strong>Настройки шрифта:</strong> Изменяет шрифт текста в документе.</p>
+            </div>
+            <div class="image-item">
+                <img src="copy.png" alt="Копировать текст">
+                <p><strong>Копировать текст:</strong> Копирует выделенный текст в буфер обмена.</p>
+            </div>
+            <div class="image-item">
+                <img src="paste.png" alt="Вставить текст">
+                <p><strong>Вставить текст:</strong> Вставляет скопированный или вырезанный текст.</p>
+            </div>
+            <div class="image-item">
+                <img src="cut.png" alt="Вырезать текст">
+                <p><strong>Вырезать текст:</strong> Вырезает выделенный текст и копирует его в буфер обмена.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Создатели: [Раметулаев, Тилепберген], [Асадбек, Коганбаев]</p>
+        <p><a href="privacy-policy.html">Политика конфиденциальности</a></p>
+        <p>Ссылки:</p>
+        <a href="www.youtube.com/@ITPro-ym7cq">YouTube Канал 1</a> | 
+        <a href="www.youtube.com/@ZevsRom">YouTube Канал 2</a>
+        <p>Для связи: <a href="tel:+998 91 378 20 74">с нами</a></p>
+        <p>&copy; 2024 Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
